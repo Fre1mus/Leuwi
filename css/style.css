@@ -1,0 +1,74 @@
+html 
+{
+    
+    background-image: url(Frame1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.nl
+{
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+}
+.nl h2
+{
+    margin-top: 10px;
+}
+.sot
+{
+    text-align: center;
+    padding-top: 20px;
+}
+.sot img
+{
+    transition: transform 0.3s;
+    margin-right: 10px;
+}
+.logo:hover img
+{
+    transform: scale(1.3);
+    opacity: 0.5; 
+
+}
+.buttons-container
+{
+    padding-top: 20px;
+    text-align: center;
+}
+.desktop-buttons {
+    display: none;
+}
+.but img
+{
+    transition: transform 0.3s;
+    margin-right: 10px;
+}
+.but:hover img
+{
+    transform: scale(1.05);
+    opacity: 0.8; 
+}
+.mobile-buttons {
+    display: block;
+}
+
+
+
+@media (min-width: 768px) {
+    /* Скрываем мобильные кнопки на десктопе */
+    .mobile-buttons {
+        display: none;
+    }
+
+    /* Показываем десктопные кнопки на десктопе */
+    .desktop-buttons {
+        display: block;
+    }
+}
+
